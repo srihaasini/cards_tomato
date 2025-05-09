@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreshMart</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <style>
+    .card-body {
+      position: relative;
+    }
+
+    .card-body .btn {
+      position: absolute;
+      bottom: 0px;
+    }
+
+    .card-img-top {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      background-color: white;
+    }
+
+    .carousel {
+      background-color: rgb(171, 23, 23);
+    }
+
+    .carousel-indicators li {
+      background-color: rgb(231, 10, 10);
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgb(54, 30, 30);
+      border-radius: 50%;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 5%;
+    }
+
+    .carousel-indicators {
+      bottom: -30px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-white">
+    <a class="navbar-brand" href="#">
+      <img src="https://1000logos.net/wp-content/uploads/2021/06/Zomato-Logo-20081.png" width="100"
+        height="60" alt="" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#loginModal" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./register.html">Register</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dailog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login Form</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Email</label>
+            <input type="email" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Password</label>
+            <input type="password" class="form-control" id="recipient-name">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="carouselExampleIndicators" class="carousel slide mt-4 container" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://cdn.oliverbonacininetwork.com/uploads/sites/58/2022/11/Rabbit-Hole-New-Menu-9173.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Rabbit dish</h5>
+                <p class="card-text my-5">Savor our signature rabbit entrée in rustic gravy</p>
+                <a href="#" class="btn btn-outline-danger my-3">Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://www.thereciperebel.com/wp-content/uploads/2019/06/instant-pot-italian-chicken-pasta-TRR-1200-22-of-36.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chicken Pasta</h5>
+                <p class="card-text my-5">Creamy Italian chicken pasta with herbs</p>
+                <a href="#" class="btn btn-outline-danger my-3">Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://insanelygoodrecipes.com/wp-content/uploads/2022/10/Homemade-Stir-Fry-Noodles-with-Beef-and-Peppers.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Stir-fry Noodles</h5>
+                <p class="card-text my-5">Tantalizing stir-fry noodles with beef and peppers.</p>
+                <a href="#" class="btn btn-outline-danger my-3">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://cookingwithchefbryan.com/wp-content/uploads/2022/08/Shallow-Poached-Salmon-with-a-Dill-Lemon-Veloute-Sauce-scaled.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Salmon dish</h5>
+                <p class="card-text my-5">Poached salmon with lemon dill velouté sauce..</p>
+                <a href="#" class="btn btn-outline-danger my-3">Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://www.willflyforfood.net/wp-content/uploads/2022/10/algerian-food-featured.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Couscous</h5>
+                <p class="card-text my-5">Traditional Algerian couscous with mixed veggies</p>
+                <a href="#" class="btn btn-outline-danger my-3">Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://www.whiskaffair.com/wp-content/uploads/2021/06/Gochujang-Fried-Rice-2-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Fried Rice</h5>
+                <p class="card-text my-5">Spicy Gochujang fried rice with vegetables.</p>
+                <a href="#" class="btn btn-outline-danger my-3">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-5">
+      <div class="col mb-4">
+        <div class="card w-100 h-100">
+          <img
+            src="https://www.recipes-avenue.com/images/recipe/my-pure-plants/2023/11/my-pure-plants-26-thanksgiving-side-dishes-that-will-steal-the-show-year-after-y-full.jpg"
+            class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Thanksgiving Dish</h5>
+            <p class="card-text my-5">Festive vegetarian delights perfect for Thanksgiving</p>
+            <a href="#" class="btn btn-color-success btn btn-outline-danger my-3">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card w-100 h-100">
+          <img src="https://www.returntothekitchen.com/wp-content/uploads/2022/08/Vegan20Chickpea20Dirty20Rice-960x634.jpg"
+            class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Dirty Rice</h5>
+            <p class="card-text my-5">Hearty vegan dirty rice with chickpeas and spices</p>
+            <a href="#" class="btn btn-color-success btn btn-outline-danger my-3">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card w-100 h-100">
+          <img src="https://media.citizen.co.za/wp-content/uploads/2022/08/Roasted-potatoes.jpg"
+            class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Roasted Potatoes</h5>
+            <p class="card-text my-5">Golden roasted potatoes, crispy and delicious.</p>
+            <a href="#" class=" btn btn-color-success btn btn-outline-danger my-3">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card w-100 h-100">
+          <img src="https://travelfoodatlas.com/wp-content/uploads/2022/11/Sambusa-1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sambusa</h5>
+            <p class="card-text my-5">Crunchy pastry pockets filled with spicy meat or veggies.</p>
+            <a href="#" class=" btn btn-color-success btn btn-outline-danger my-3">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card w-100 h-100">
+          <img src="https://www.thedailymeal.com/img/gallery/the-unhealthiest-pasta-dishes-at-the-cheesecake-factory/l-intro-1668006057.jpg"
+            class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Pasta</h5>
+            <p class="card-text my-5">Cheesecake Factory’s indulgent cheesy pasta dish.</p>
+            <a href="#" class="btn btn-color-success btn btn-outline-danger my-3">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card w-100 h-100">
+          <img src="https://travelfoodatlas.com/wp-content/uploads/2022/11/chicken-Paella.jpg.webp"
+            class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Chicken Paella</h5>
+            <p class="card-text my-5">Spanish-style paella with chicken and saffron rice.</p>
+            <a href="#" class="btn btn-color-success btn btn-outline-danger my-3">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card w-100 h-100">
+          <img src="https://lh6.googleusercontent.com/Do6DtXylFh6Hud7cm94kt2CtlKXh7DrNT4vO8KF7E2bl0W9pxhiLMxCo8NTp72CjoTeewywDwc4Aqekb7XCNJmhD2Qc2rjz4rJ_aO9ljfHHa2Y9Tk9SMvWWLpVtn0iv8sTi8k0znPGZNIAn_kGS03h8"
+            class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Tacos</h5>
+            <p class="card-text my-5">Italian materpiece.</p>
+            <a href="#" class="btn btn-color-success btn btn-outline-danger my-3">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card w-100 h-100">
+          <img src="https://www.foodrepublic.com/img/gallery/22-most-influential-international-dishes-of-all-time/l-intro-1689274811.jpg"
+            class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">The Shell Dish</h5>
+            <p class="card-text my-5">Very costly and Very tasty.</p>
+            <a href="#" class="btn btn-color-success btn btn-outline-danger my-3">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
